@@ -28,7 +28,7 @@ def scrape_and_format_table(sequence, seq_name):
         extracted_table = tables[5]
 
         # Filter rows for CDR-H1, CDR-H2, and CDR-H3
-        cdr_table = extracted_table[extracted_table['Region'].isin(['CDR-H1', 'CDR-H2', 'CDR-H3'])]
+        cdr_table = extracted_table[extracted_table['Region'].isin(['CDR-H1', 'CDR-H2', 'CDR-H3', 'NaN'])]
 
         # Parse the start and end residues
         cdr_coords = {}
@@ -43,7 +43,7 @@ def scrape_and_format_table(sequence, seq_name):
                 cdr_coords[f'{region.lower()}_end'] = None
 
         # Get the total length
-        total_length = extracted_table['Length'].dropna().astype(int).sum()
+        total_length = extracted_table['Length'].dropna().iloc[7]
 
         # Prepare the final dataframe
         formatted_data = {
