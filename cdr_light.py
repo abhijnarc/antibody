@@ -1,6 +1,6 @@
 import pandas as pd
 
-def scrape_and_append_light_chain(sequence, seq_name):
+def append_light_chain(sequence):
     """
     Scrapes a table from the Abysis page using the provided light chain sequence,
     extracts start and end residues for LCDR1, LCDR2, and LCDR3, 
@@ -44,7 +44,6 @@ def scrape_and_append_light_chain(sequence, seq_name):
 
         # Prepare the light chain data
         lc_data = {
-            'seq': [seq_name],
             'lcdr1_start': [cdr_coords.get('cdr-l1_start')],
             'lcdr1_end': [cdr_coords.get('cdr-l1_end')],
             'lcdr2_start': [cdr_coords.get('cdr-l2_start')],
@@ -85,13 +84,11 @@ if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Scrape CDR table from Abysis.")
     parser.add_argument("--sequence", type=str, required=True, help="The amino acid sequence for the chain.")
-    parser.add_argument("--name", type=str, required=True, help="A name or identifier for the sequence.")
 
     # Parse arguments
     args = parser.parse_args()
     sequence = args.sequence
-    seq_name = args.name
 
     # Call the scrape function with the provided arguments
-    scrape_and_append_light_chain(sequence, seq_name)
+    append_light_chain(sequence)
 
