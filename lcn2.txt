@@ -1,0 +1,18 @@
+[+] Reading structure file: /data/Abhijna/lcn2docking/lcn2dock1/11_seletopclusts/cluster_1_model_1.pdb
+[!] Structure contains gaps:
+	B MET1 < Fragment 0 > B GLY179
+	A GLU1 < Fragment 1 > A SER117
+	A VAL118 < Fragment 2 > A LYS227
+
+[+] Parsed structure file cluster_1_model_1 (2 chains, 406 residues)
+[+] No. of intermolecular contacts: 137
+[+] No. of charged-charged contacts: 8
+[+] No. of charged-polar contacts: 20
+[+] No. of charged-apolar contacts: 34
+[+] No. of polar-polar contacts: 8
+[+] No. of apolar-polar contacts: 31
+[+] No. of apolar-apolar contacts: 36
+[+] Percentage of apolar NIS residues: 39.64
+[+] Percentage of charged NIS residues: 18.92
+[++] Predicted binding affinity (kcal.mol-1):    -15.5
+[++] Predicted dissociation constant (M) at 25.0˚C:  4.0e-12
