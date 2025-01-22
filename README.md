@@ -20,8 +20,8 @@
 |---------------|-----------|-----------------------------------|
 | TRUST4        | [version] | Antibody sequence extraction      |
 | MMseqs2       | [version] | Clustering and filtering sequences|
-| AlphaFold     | [version] | Antibody structure prediction     |
-| Docking Tool  | [name]    | Docking studies                  |
+| IgFold        | [version] | Antibody structure prediction     |
+| HADDOCK3      | [name]    | Docking studies                   |
 | Python        | [version] | Scripting for automation          |
 
 ### **Workflow Steps**
@@ -50,7 +50,7 @@
 - Explanation of the unique sequence selection process.
 
 #### **5. Structure Prediction**
-- Parameters and methods for AlphaFold.
+- Parameters and methods for IgFold.
 - Input and output examples.
 
 #### **6. Docking Studies**
@@ -104,13 +104,13 @@
   ```
 
 ### **Workflow Automation**
-- Automated pipeline using [Nextflow/Snakemake].
+- Automated pipeline using [Nextflow].
 - Include diagram of workflow.
 
 ### **Environment**
 - Dependencies:
   ```bash
-  conda install -c conda-forge trust4 mmseqs2 alphafold
+  conda activate trust4 mmseqs2 igfold
   ```
 
 ---
@@ -125,6 +125,6 @@
 ## **References**
 - TRUST4: [cite].
 - MMseqs2: [cite].
-- AlphaFold: [cite].
+- IgFold: [cite].
 
 ---
