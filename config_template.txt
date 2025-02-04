@@ -1,0 +1,61 @@
+# Haddock configuraion file
+run_dir = "{prefix}"
+mode = "local"
+ncores = 64
+molecules = [ "1ngl_clean.pdb", "{prefix}_igf_clean.pdb" ]
+
+[topoaa]
+
+[rigidbody]
+tolerance = 5
+ambig_fname = "ambig{prefix}.tbl"
+unambig_fname = "unambig{prefix}.tbl"
+ranair = false
+nrair_1 = 6
+rair_sta_1_1 = 31
+rair_end_1_1 = 38
+rair_sta_1_2 = 50
+rair_end_1_2 = 63
+rair_sta_1_3 = 101
+rair_end_1_3 = 123
+rair_sta_1_4 = 154
+rair_end_1_4 = 161
+rair_sta_1_5 = 183
+rair_end_1_5 = 186
+rair_sta_1_6 = 215
+rair_end_1_6 = 220
+
+sampling = 10000
+
+[caprieval]
+
+[clustfcc]
+
+[seletopclusts]
+top_models = 20
+
+[caprieval]
+
+[flexref]
+tolerance = 5
+ambig_fname = "ambig{prefix}.tbl"
+unambig_fname = "unambig{prefix}.tbl"
+
+[caprieval]
+
+[emref]
+tolerance = 5
+ambig_fname = "ambig{prefix}.tbl"
+unambig_fname = "unambig{prefix}.tbl"
+
+[caprieval]
+
+[clustfcc]
+min_population = 1
+
+[seletopclusts]
+top_models = 10
+
+[caprieval]
+
+# End of configuration file ####
