@@ -10,7 +10,7 @@ antibody_nextflow/
 │   ├── ag_res.txt
 │   ├── config_template.txt
 │── scripts/                
-│   ├── igf_bulk.py
+│   ├── igf_full.py
 │   ├── clean_ab.sh
 │   ├── cdr_parse.py
 │   ├── ab_res.py
