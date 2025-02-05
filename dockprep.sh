@@ -9,9 +9,9 @@ fi
 # Set variables
 prefix=$1
 fasta_file="${prefix}.fa"
-coord_file="${prefix}_coord.csv"
-clean_pdb="${prefix}_clean.pdb"
 igf_pdb="${prefix}_igf.pdb"
+clean_pdb="${prefix}_igf_clean.pdb"
+coord_file="${prefix}_coord.csv"
 res_file="${prefix}_res.txt"
 ambig_file="ambig${prefix}.tbl"
 unambig_file="unambig${prefix}.tbl"
