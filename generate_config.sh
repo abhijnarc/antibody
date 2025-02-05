@@ -11,7 +11,7 @@ prefix=$1
 output_file="${prefix}.cfg"
 
 # Define the template file (ensure this is in the same directory or adjust path)
-template_file="config.txt"
+template_file="config_template.txt"
 
 # Check if the template file exists
 if [ ! -f "$template_file" ]; then
