@@ -7,7 +7,7 @@ pref = sys.argv[1]
 # Load the input CSV files with error handling
 try:
     input_df = pd.read_csv(pref + '/11_seletopclusts/cluster_1_model_1_intf.csv')
-    lcn2_df = pd.read_csv('lcn2.csv')
+    lcn2_df = pd.read_csv('/data/Abhijna/lcn2_correct.csv')
 except pd.errors.EmptyDataError:
     print("One of the input files is empty or not formatted correctly.")
     exit()
